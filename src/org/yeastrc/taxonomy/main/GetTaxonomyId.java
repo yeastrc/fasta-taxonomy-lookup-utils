@@ -27,27 +27,29 @@ public class GetTaxonomyId {
 
 	private Pattern[]  taxIdPatterns = {
 			
+			//  Make case insensitive  Pattern.CASE_INSENSITIVE
+			
 			//  Tax_Id=
 			
 			// MiddleOfLine
-			Pattern.compile( "^.*\\s+Tax_Id=(\\d+)\\s+.*$" ),
+			Pattern.compile( "^.*\\s+Tax_Id=(\\d+)\\s+.*$", Pattern.CASE_INSENSITIVE ),
 			// StartOfLine = 
-			Pattern.compile( "^Tax_Id=(\\d+)\\s+.*$" ),
+			Pattern.compile( "^Tax_Id=(\\d+)\\s+.*$", Pattern.CASE_INSENSITIVE ),
 			// EndOfLine = 
-			Pattern.compile( "^.*\\s+Tax_Id=(\\d+)$" ),
+			Pattern.compile( "^.*\\s+Tax_Id=(\\d+)$", Pattern.CASE_INSENSITIVE ),
 			// AllOfLine = 
-			Pattern.compile( "^Tax_Id=(\\d+)$" ),
+			Pattern.compile( "^Tax_Id=(\\d+)$", Pattern.CASE_INSENSITIVE ),
 
 			//  Taxonomy_Id=
 			
 			// MiddleOfLine = 
-			Pattern.compile( "^.*\\s+Taxonomy_Id=(\\d+)\\s+.*$" ),
+			Pattern.compile( "^.*\\s+Taxonomy_Id=(\\d+)\\s+.*$", Pattern.CASE_INSENSITIVE ),
 			// StartOfLine = 
-			Pattern.compile( "^Taxonomy_Id=(\\d+)\\s+.*$" ),
+			Pattern.compile( "^Taxonomy_Id=(\\d+)\\s+.*$", Pattern.CASE_INSENSITIVE ),
 			// EndOfLine = 
-			Pattern.compile( "^.*\\s+Taxonomy_Id=(\\d+)$" ),
+			Pattern.compile( "^.*\\s+Taxonomy_Id=(\\d+)$", Pattern.CASE_INSENSITIVE ),
 			// AllOfLine = 
-			Pattern.compile( "^Taxonomy_Id=(\\d+)$" )
+			Pattern.compile( "^Taxonomy_Id=(\\d+)$", Pattern.CASE_INSENSITIVE )
 	};
 
 	

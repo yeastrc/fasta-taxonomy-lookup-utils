@@ -13,3 +13,8 @@ hs_err_pid*
 /bin
 /deploy
 /classes
+
+/.idea/
+.gradle/
+/build/
+/*.iml
